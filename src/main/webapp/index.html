@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<title>Simple Calculator</title>
+  Pratiksha
+<body>
+  Enter the number 1:<input type="number" id="num1" required autofocus>
+  Enter the number 2:<input type="number" id="num2" required>
+  <input type="button" value="Add" onclick="AddFunc();">
+
+ The result is:<p id="result">
+</p>
+<script>
+function AddFunc()
+{
+ var n1 = document.getElementById("num1").value;                      
+ var n2 = document.getElementById("num2").value;
+ var result=+n1 + +n2;
+ alert("sum is "+result);
+
+ document.getElementById("result").innerText=result;
+}
+</script>
+</body>
+</html>
